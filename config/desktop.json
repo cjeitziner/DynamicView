@@ -1,0 +1,62 @@
+{
+    "lang" : "de",
+
+    "database": "SQLite",
+
+    "desktops" : [
+        {
+            "name": "Desktop1",
+            "viewGroup": "oneButton"
+        },
+        {
+            "name": "Desktop2",
+            "viewGroup": "anotherButton"
+        },
+        {
+            "name": "Desktop3",
+            "viewGroup": "twoButtons"
+        }       ,
+        {
+            "name": "Desktop4",
+            "viewGroup": "threeButtons"
+        }       
+    ],
+
+    "viewGroups": [
+        {
+            "name": "oneButton",
+            "orientation": "vertical",
+            "viewGroups": [{"type": "view", "name": "redButton"}]
+        },
+        {
+            "name": "anotherButton",
+            "orientation": "vertical",
+            "viewGroups": [{"type": "view", "name": "greenButton"}]
+        },
+        {
+            "name": "twoButtons",
+            "orientation": "vertical",
+            "viewGroups": [{"type": "viewGroup", "name": "oneButton"},
+                           {"type": "viewGroup", "name": "anotherButton"}]
+        },
+        {
+            "name": "threeButtons",
+            "orientation": "horizontal",
+            "viewGroups": [{"type": "viewGroup", "name": "twoButtons"},
+                           {"type": "view", "name": "blueButton"}]
+        }
+    ],
+    "views": [
+        {
+            "name": "redButton"
+        },
+        {
+            "name": "greenButton"
+        },
+        {
+            "name": "blueButton"
+        }
+    ]
+
+
+}
